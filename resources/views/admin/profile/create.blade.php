@@ -13,5 +13,7 @@
             <h2>プロフィール新規作成</h2>
         </div>
     </div>
+
+
 </div>
 @endsection
