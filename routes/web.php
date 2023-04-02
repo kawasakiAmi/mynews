@@ -32,14 +32,14 @@ Route::middleware('auth')->group(function () {
 
 Route::controller(NewsController::class)->prefix('admin')->middleware('auth')->name('news.')->group(function () {
     Route::get('news/create', 'add')->name('add');
+    Route::post('news/create', 'create')->name('create'); # 追記
 });
 
 Route::controller(SelfProfileController::class)->prefix('admin')->middleware('auth')->name('Profile.')->group(function () {
     Route::get('profile/create', 'add')->name('add');
-});
-
-Route::controller(SelfProfileController::class)->prefix('admin')->middleware('auth')->name('Profile.')->group(function () {
+    Route::post('profile/create', 'create')->name('create');
     Route::get('profile/edit', 'edit')->name('edit');
+    Route::post('profile/edit', 'update')->name('update');
 });
 
 
