@@ -42,4 +42,5 @@ Route::controller(SelfProfileController::class)->prefix('admin')->middleware('au
     Route::get('profile/edit', 'edit')->name('edit');
 });
 
+
 require __DIR__ . '/auth.php';
