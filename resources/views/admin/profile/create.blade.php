@@ -1,11 +1,11 @@
-{{-- layouts/admin.blade.phpを読み込む --}}
+{{-- layouts/profile.blade.phpを読み込む --}}
 @extends('layouts.profile')
 
 
-{{-- admin.blade.phpの@yield('title')に'MyNews'を埋め込む --}}
-@section('title', 'MyNews')
+{{-- profile.blade.phpの@yield('title')に'ニュースの新規作成'を埋め込む --}}
+@section('title', 'プロフィール新規作成')
 
-{{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
+{{-- profile.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
 <div class="container">
     <div class="row">
@@ -14,6 +14,5 @@
         </div>
     </div>
 
-
-</div> 
+</div>
 @endsection
