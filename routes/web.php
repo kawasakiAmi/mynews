@@ -48,3 +48,5 @@ Route::controller(ProfileController::class)->prefix('admin')->middleware('auth')
 });
 
 require __DIR__ . '/auth.php';
+
+Route::get('/', 'App\Http\Controllers\Admin\NewsController@index');
